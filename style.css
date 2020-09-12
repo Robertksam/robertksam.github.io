@@ -1,0 +1,88 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: wheat;
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Pacifico;
+    font-weight: bolder;
+    color: purple;
+    animation: textAnimation 6s infinite;
+}
+.cakes{
+    display: flex;
+    justify-content: space-evenly;
+}
+h4{
+    text-align: center;
+    font-family: Pacifico;
+}
+.description{
+    width: 250px;
+    height: auto;
+    background-color: purple;
+    box-shadow: 5px 5px 5px rgb(0,0,0);
+    color: white;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btns{
+    display: flex;
+    justify-content: space-around;
+}
+.two{
+    display: none;
+}
+
+.heart{
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    color: purple;
+    animation: fall 2s forwards;
+}
+@keyframes fall{
+    from{
+        transform: scale(2.9);
+        color: purple;
+    }
+    to{
+        transform: scale(1.1);
+        transform: translateY(105vh);    
+        color: purple;
+        
+    }
+}
+@keyframes textAnimation{
+    0%, 100%{
+        transform: scale(0.5);
+    }
+    10%, 90%{
+        transform: scale(0.6);    
+        
+    }
+    20%, 80%{
+        transform: scale(0.7);
+    }
+    30%, 70%{
+        transform: scale(0.8);
+       
+    }
+    40%, 60%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.0);    
+       
+    }
+}
