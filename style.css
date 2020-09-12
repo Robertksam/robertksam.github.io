@@ -60,6 +60,7 @@ h4{
         transform: scale(1.1);
         transform: translateY(105vh);    
         color: purple;
+        opacity: 0.5;
         
     }
 }
